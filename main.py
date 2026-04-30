@@ -4,7 +4,7 @@
 to install, use this command above in the terminal
 and it will give an executable application file!
 '''
-
+import forest
 from classes import Ranger, Brawler, Rouge, Warrior, Mage
 import inventory
 
@@ -34,6 +34,8 @@ if choice in class_map:
 
 print("Game started!")
 print("If you need to use a certain command but forgot how to do it, do 'help' in the terminal")
+
+
 
 while True:
     command = input("\n> ").strip().lower()
