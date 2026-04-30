@@ -1,5 +1,5 @@
 class Player:
-    def __init__(self, maxhp, speed, basedamage, dodge, block, level, skillpoints):
+    def __init__(self, maxhp, speed, basedamage, dodge, block, level, skillpoints, magic):
         self.level       = level
         self.maxhp       = maxhp
         self.hp          = maxhp      # current HP starts full
@@ -10,9 +10,10 @@ class Player:
         self.skillpoints = skillpoints
 
     def __repr__(self):
-        return (f"{self.__class__.__name__} | HP: {self.hp}/{self.maxhp} | "
+        return (f"{self.__class__.__name__}"
+                f" | HP: {self.hp}/{self.maxhp} | "
                 f"SPD: {self.speed} | DMG: {self.basedamage} | "
-                f"Dodge: {self.dodge}% | Block: {self.block}%")
+                f"Dodge: {self.dodge} | Block: {self.block}")
 
 
 class Warrior(Player):
@@ -22,6 +23,7 @@ class Warrior(Player):
             level      =1,
             maxhp      =30,
             speed      =4,
+            magic      =2,
             basedamage =5,
             dodge      =5,
             block      =10,
