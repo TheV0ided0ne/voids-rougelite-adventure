@@ -63,7 +63,7 @@ class Rouge(Player):
     def __init__(self):
         super().__init__(
             level         = 1,
-            maxhp         = 20,
+            maxhp          = 20,
             speed         = 15,
             basedamage    = 8,
             dodge         = 30,
