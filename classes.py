@@ -42,7 +42,7 @@ class Ranger(Player):
 
         )
 
-class Fighter(Player):
+class Brawler(Player):
     """Balanced brawler. No standout weaknesses, no standout strengths."""
     def __init__(self):
         super().__init__(

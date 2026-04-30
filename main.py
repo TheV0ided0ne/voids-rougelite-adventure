@@ -5,7 +5,7 @@ to install, use this command above in the terminal
 and it will give an executable application file!
 '''
 
-from classes import Ranger, Fighter, Rouge, Warrior, Mage
+from classes import Ranger, Brawler, Rouge, Warrior, Mage
 import inventory
 
 print("Welcome to Void's Average Rougelite Adventure!")
@@ -13,7 +13,7 @@ print("Please select your class!")
 print("")
 print("Warrior [1]")
 print("Ranger [2]")
-print("Fighter [3]")
+print("Brawler [3]")
 print("Rouge [4]")
 print("Mage [5]")
 
@@ -22,7 +22,7 @@ choice = int(input("> "))
 class_map = {
     1: Warrior,
     2: Ranger,
-    3: Fighter,
+    3: Brawler,
     4: Rouge,
     5: Mage
 }
