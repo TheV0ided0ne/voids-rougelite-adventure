@@ -45,12 +45,19 @@ while True:
         print("inventory: displays entire inventory")
         print("stats: displays all class statistics and skill points")
 
-    if command == "inventory" or "inv":
+    elif command == "inventory":
         inventory.display()
 
-    if command == "stats" or "stat" or "st":
+    elif command == "stats":
         print(f"Here are your stats : {player}")
         print(f"Here are your skill points: {player.skillpoints}")
 
-    if command == "advance":
+    elif command == "advance":
         print("You continue onwards!")
+        break
+
+    else:
+        print("invalid option, please try again")
+
+
+
