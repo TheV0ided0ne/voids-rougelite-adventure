@@ -3,8 +3,41 @@ import inventory
 import main
 
 '''
-
+All forest enemies and zone features will remain here, call them with their respective variables
 '''
+
+class ForestInitiate:
+    while True:
+        print("Welcome to the forest, this land is peaceful, until the giant came along.")
+        print("Please vanquish him to free the lands of the forests, and let nature take it's lands back!")
+        print()
+        print()
+        print("What shall you do first? | Zone 1 / 8")
+        print("You can:")
+        print(" [1]")
+        print("Take a lay of the land and be strategic [2]")
+        print("Take a rest after the journey that you already took to get here [3]")
+        forest1 = input().strip().lower()
+        if forest1 == "1":
+            print()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 class ForestEnemy:
     def __init__(self, maxhp, speed, basedamage, dodge, block):
@@ -26,8 +59,7 @@ class Bee(ForestEnemy):
             block = 0
         )
 
-print("You start within the forest of damnation, a mythical land where ramage is common, and you are always in danger.")
-print("What shall you do?")
+
 
 print("[1] Scavenge")
 print("[2] Hunt")
