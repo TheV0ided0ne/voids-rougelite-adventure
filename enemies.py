@@ -1,3 +1,8 @@
+'''
+uses an enemy class initialiser and defines the variables of what they have.
+they all have hp, speed, base damage, dodge and block
+'''
+
 class Enemy:
     def __init__(self, maxhp, speed, basedamage, dodge, block):
         self.maxhp      = maxhp

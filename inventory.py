@@ -1,3 +1,7 @@
+'''
+the default number of resources someone has is 0, this will go for all resources
+'''
+
 class Inventory:
     wool = 0
     wood = 0
@@ -15,6 +19,10 @@ class Inventory:
     small_health_potion = 0
     medium_health_potion = 0
     large_health_potion = 0
+
+'''
+this is the display code for when a player does 'inventory' in the terminal
+'''
 
 def display():
     print("\n--- Inventory ---")
