@@ -35,8 +35,6 @@ if choice in class_map:
 print("Game started!")
 print("If you need to use a certain command but forgot how to do it, do 'help' in the terminal")
 
-
-
 while True:
     command = input("\n> ").strip().lower()
 
@@ -53,3 +51,6 @@ while True:
     if command == "stats" or "stat" or "st":
         print(f"Here are your stats : {player}")
         print(f"Here are your skill points: {player.skillpoints}")
+
+    if command == "advance":
+        print("You continue onwards!")
