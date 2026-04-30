@@ -1,27 +1,42 @@
+'''
+initializer and variables for weapons
+'''
+
 class Weapons:
-    def __init__(self,strength, damage, luck, constitution,dexterity):
-        self.strength = strength
+    def __init__(self,strength, damage, luck,
+                 constitution, dexterity, intelligence,
+                 wisdom, charisma):
+
         self.damage = damage
-        self.constitution = constitution
-        self.luck = luck
+        self.strength = strength
         self.dexterity = dexterity
+        self.constitution = constitution
+        self.intelligence = intelligence
+        self.wisdom = wisdom
+        self.charisma = charisma
+        self.luck = luck
 
 
 class StarterDagger(Weapons):
     def __init__(self):
         super().__init__(
-            strength=0,
             damage=3,
-            luck=2,
-            constitution=0,
-            dexterity=2
+            dexterity=2,
+            luck=2
         )
+
 class StarterFists(Weapons):
     def __init__(self):
         super().__init__(
-            strength=2,
-            constitution=2,
             damage=3,
-            luck=0,
-            dexterity=0
+            strength=2,
+            constitution=2
+        )
+
+class StarterSword(Weapons):
+    def __init__(self):
+        super().__init__(
+            damage=3,
+            strength=2,
+            constitution=2
         )
