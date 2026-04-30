@@ -36,7 +36,7 @@ class Zombies(Enemy):
             dodge = 15,
             block = 0
         )
-class Undead Necromancer(Enemy):
+class UndeadNecromancer(Enemy):
     def __init__(self):
         super().__init__(
             maxhp = 10,
@@ -45,7 +45,7 @@ class Undead Necromancer(Enemy):
             dodge = 15,
             block = 0
         )
-class Kobold Warrior(Enemy):
+class KoboldWarrior(Enemy):
     def __init__(self):
         super().__init__(
             maxhp = 1,
@@ -54,7 +54,7 @@ class Kobold Warrior(Enemy):
             dodge = 1,
             block = 1
         )
-class Kobold Assassin(Enemy):
+class KoboldAssassin(Enemy):
     def __init__(self):
         super().__init__(
             maxhp = 1,

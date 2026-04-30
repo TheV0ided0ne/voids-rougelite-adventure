@@ -1,3 +1,5 @@
+from turtledemo import forest
+
 import classes
 import inventory
 import main
@@ -24,6 +26,60 @@ class Bee(ForestEnemy):
             basedamage = 4,
             dodge = 15,
             block = 0
+        )
+class Spider(ForestEnemy):
+    def __init__(self):
+        super().__init__(
+            maxhp = 1,
+            speed = 1,
+            basedamage = 1,
+            dodge = 1,
+            block = 1
+        )
+class Goblin(ForestEnemy):
+    def __init__(self):
+        super().__init__(
+            maxhp = 1,
+            speed = 1,
+            basedamage = 1,
+            dodge = 1,
+            block = 1
+        )
+class Bandit(ForestEnemy):
+    def __init__(self):
+        super().__init__(
+            maxhp = 1,
+            speed = 1,
+            basedamage = 1,
+            dodge = 1,
+            block = 1
+        )
+class Rat(ForestEnemy):
+    def __init__(self):
+        super().__init__(
+            maxhp = 1,
+            speed = 1,
+            basedamage = 1,
+            dodge = 1,
+            block = 1
+        )
+class LivingPebble(ForestEnemy):
+    def __init__(self):
+        super().__init__(
+            maxhp = 1,
+            speed = 1,
+            basedamage = 1,
+            dodge = 1,
+            block = 1
+        )
+class Pixie(ForestEnemy):
+    def __init__(self):
+        super().__init__(
+            maxhp = 1,
+            speed = 1,
+            basedamage = 1,
+            dodge = 1,
+            block = 1
         )
 
 print("You start within the forest of damnation, a mythical land where ramage is common, and you are always in danger.")
