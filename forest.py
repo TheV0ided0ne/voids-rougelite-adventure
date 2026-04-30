@@ -1,5 +1,3 @@
-from turtledemo import forest
-
 import classes
 import inventory
 import main
@@ -99,20 +97,20 @@ class Rat(ForestEnemy):
 class LivingPebble(ForestEnemy):
     def __init__(self):
         super().__init__(
-            maxhp = 1,
+            maxhp = 25,
             speed = 1,
-            basedamage = 1,
-            dodge = 1,
-            block = 1
+            basedamage = 6,
+            dodge = 3,
+            block = 0
         )
 class Pixie(ForestEnemy):
     def __init__(self):
         super().__init__(
-            maxhp = 1,
-            speed = 1,
-            basedamage = 1,
-            dodge = 1,
-            block = 1
+            maxhp = 20,
+            speed = 5,
+            basedamage = 4,
+            dodge = 10,
+            block = 0
         )
 
 
