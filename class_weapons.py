@@ -16,7 +16,7 @@ class StarterDagger(Weapons):
             constitution=0,
             dexterity=2
         )
-class starterFists(Weapons):
+class StarterFists(Weapons):
     def __init__(self):
         super().__init__(
             strength=2,
