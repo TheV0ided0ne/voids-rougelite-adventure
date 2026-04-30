@@ -42,3 +42,17 @@ def display():
     print(f"  Medium Health Potion : {Inventory.medium_health_potion}")
     print(f"  Large Health Potion  : {Inventory.large_health_potion}")
     print("-----------------")
+
+class InventoryWeapons:
+    starterdagger = 0
+    starterfists = 0
+    startersword = 0
+    starterbook = 0
+    starterinstrument = 0
+    starterbow = 0
+    starterstaff = 0
+
+def displayweapons():
+    print("\n---Weapon Inventory---")
+    print(f"  Starter Sword          : {InventoryWeapons.startersword}")
+    print(f"  Starter Dagger         : {InventoryWeapons.starterdagger}")

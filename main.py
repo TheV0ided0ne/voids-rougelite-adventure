@@ -44,11 +44,16 @@ while True:
         print("\n---Command List---")
         print("numbers 1-9: selective options that progress the game!")
         print("help: displays this command list")
-        print("inventory: displays entire inventory")
+        print("inventory: displays materials inside inventory")
+        print("weapons: displays weapons inside inventory")
         print("stats: displays all class statistics and skill points")
+        print("advance: you continue onwards")
 
     elif command == "inventory":
         inventory.display()
+
+    elif command == "weapons":
+        inventory.displayweapons()
 
     elif command == "stats":
         print(f"Here are your stats : {player}")
