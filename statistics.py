@@ -15,9 +15,3 @@ class Statistics:
         self.wisdom = wisdom
         self.charisma = charisma
         self.luck = luck
-
-        '''I will do this later Jake, please do not change this file'''
-
-class StatIncrease(Statistics):
-    def __init__(self):
-        super().__init__()
