@@ -1,11 +1,23 @@
-from statistics import Statistics
-
 '''
 initializer and variables for weapons
 '''
 
+class Weapons:
+    def __init__(self,strength, damage, luck,
+                 constitution, dexterity, intelligence,
+                 wisdom, charisma):
 
-class StarterDagger(Statistics):
+        self.damage = damage
+        self.strength = strength
+        self.dexterity = dexterity
+        self.constitution = constitution
+        self.intelligence = intelligence
+        self.wisdom = wisdom
+        self.charisma = charisma
+        self.luck = luck
+
+
+class StarterDagger(Weapons):
     def __init__(self):
         super().__init__(
             damage=3,
@@ -13,7 +25,7 @@ class StarterDagger(Statistics):
             luck=2
         )
 
-class StarterFists(Statistics):
+class StarterFists(Weapons):
     def __init__(self):
         super().__init__(
             damage=3,
@@ -21,7 +33,7 @@ class StarterFists(Statistics):
             constitution=2
         )
 
-class StarterSword(Statistics):
+class StarterSword(Weapons):
     def __init__(self):
         super().__init__(
             damage=3,
