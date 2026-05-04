@@ -1,7 +1,7 @@
-## Void's Rougelite Adventure
+# Void's Rougelite Adventure
 A rougelite that is different from others
 
-# About the game
+## About the game
 This game is programmed in Python primarily, and is a project me and my friend are doing for our school IT class!
 
 Currently this is what is planned:
@@ -14,7 +14,7 @@ The Forest
 The Caverns
 The Mines
 
-# Credits
+## Credits
 OfficialVoidVA
 Firephinxs
 
