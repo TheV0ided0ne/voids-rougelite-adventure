@@ -40,3 +40,9 @@ class StarterSword(Weapons):
             strength=2,
             constitution=2
         )
+class Starterbow(Weapons):
+    def __init__(self):
+        super().__init__(
+                damage=3,
+                dexterity=2,
+        )
