@@ -4,6 +4,7 @@ class Player:
         self.maxhp       = maxhp
         self.hp          = maxhp      # current HP starts full
         self.speed       = speed
+        self.magic       = magic
         self.basedamage  = basedamage
         self.dodge       = dodge      # % chance to dodge an attack
         self.block       = block      # % damage reduced when blocking
@@ -13,7 +14,7 @@ class Player:
         return (f"{self.__class__.__name__}"
                 f" | HP: {self.hp}/{self.maxhp} | "
                 f"SPD: {self.speed} | DMG: {self.basedamage} | "
-                f"Dodge: {self.dodge} | Block: {self.block}")
+                f"Dodge: {self.dodge} | Block: {self.block}" )
 
 
 class Warrior(Player):
@@ -37,6 +38,7 @@ class Ranger(Player):
             level         = 1,
             maxhp         = 25,
             speed         = 9,
+            magic         = 1,
             basedamage    = 6,
             dodge         = 15,
             block         = 5,
@@ -51,6 +53,7 @@ class Brawler(Player):
             level         = 1,
             maxhp         = 30,
             speed         = 10,
+            magic         = 0,
             basedamage    = 4,
             dodge         = 20,
             block         = 10,
@@ -63,8 +66,9 @@ class Rouge(Player):
     def __init__(self):
         super().__init__(
             level         = 1,
-            maxhp          = 20,
+            maxhp         = 20,
             speed         = 15,
+            magic         = 4,
             basedamage    = 8,
             dodge         = 30,
             block         = 0,
@@ -78,6 +82,7 @@ class Mage(Player):
             level         = 1,
             maxhp         = 15,
             speed         = 5,
+            magic         = 8,
             basedamage    = 12,
             dodge         = 5,
             block         = 0,

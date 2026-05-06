@@ -52,7 +52,7 @@ class InventoryWeapons:
     starterbow = 0
     starterstaff = 0
 
-def displayweapons():
+def displayWeapons():
     print("\n---Weapon Inventory---")
     print(f"  Starter Sword          : {InventoryWeapons.startersword}")
     print(f"  Starter Dagger         : {InventoryWeapons.starterdagger}")

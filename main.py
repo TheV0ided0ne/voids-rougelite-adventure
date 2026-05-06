@@ -4,8 +4,8 @@
 to install, use this command above in the terminal
 and it will give an executable application file!
 '''
-import forest
 from classes import Ranger, Brawler, Rouge, Warrior, Mage
+import statistics
 import inventory
 
 print("Welcome to Void's Average Rougelite Adventure!")
@@ -53,10 +53,12 @@ while True:
         inventory.display()
 
     elif command == "weapons":
-        inventory.displayweapons()
+        inventory.displayWeapons()
 
     elif command == "stats":
         print(f"Here are your stats : {player}")
+        print("")
+        print(f"{statistics}")
         print(f"Here are your skill points: {player.skillpoints}")
 
     elif command == "advance":
