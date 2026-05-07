@@ -20,3 +20,12 @@ class Giant(Bosses):
            dodge = 0,
            block = 0
     )
+class BoneDrake(Bosses):
+    def __init__(self):
+        super().__init__(
+            maxhp=0,
+            speed=0,
+            basedamage=0,
+            dodge=0,
+            block=0
+        )
