@@ -1,34 +1,55 @@
 class Player:
-    def __init__(self, maxhp, speed, basedamage, dodge, block, level, skillpoints, magic):
-        self.level       = level
-        self.maxhp       = maxhp
-        self.hp          = maxhp      # current HP starts full
-        self.speed       = speed
-        self.magic       = magic
-        self.basedamage  = basedamage
-        self.dodge       = dodge      # % chance to dodge an attack
-        self.block       = block      # % damage reduced when blocking
-        self.skillpoints = skillpoints
+    def __init__(self, maxhp, speed, basedamage, dodge,
+                 block, level, skillpoints, magic, strength,
+                 dexterity, constitution, intelligence,
+                 wisdom, charisma, luck):
+        self.level        = level
+        self.maxhp        = maxhp
+        self.hp           = maxhp      # current HP starts full
+        self.speed        = speed
+        self.magic        = magic
+        self.basedamage   = basedamage
+        self.dodge        = dodge      # % chance to dodge an attack
+        self.block        = block      # % damage reduced when blocking
+        self.skillpoints  = skillpoints
+        self.strength     = strength
+        self.dexterity    = dexterity
+        self.constitution = constitution
+        self.intelligence = intelligence
+        self.wisdom       = wisdom
+        self.charisma     = charisma
+        self.luck         = luck
 
     def __repr__(self):
         return (f"{self.__class__.__name__}"
                 f" | HP: {self.hp}/{self.maxhp} | "
                 f"SPD: {self.speed} | DMG: {self.basedamage} | "
-                f"Dodge: {self.dodge} | Block: {self.block}" )
+                f"Dodge: {self.dodge} | Block: {self.block} | "
+                f"Str: {self.strength} | Dex: {self.dexterity} | "
+                f"Con: {self.constitution} | Int: {self.intelligence} | "
+                f"Wis: {self.wisdom} | Cha: {self.charisma} | "
+                f"Luc: {self.luck} | Skillpoints: {self.skillpoints} | " )
 
 
 class Warrior(Player):
     """Tank. High HP and block, slow, hits hard, bad dodge."""
     def __init__(self):
         super().__init__(
-            level      =1,
-            maxhp      =30,
-            speed      =4,
-            magic      =2,
-            basedamage =5,
-            dodge      =5,
-            block      =10,
-            skillpoints=0,
+            level        =1,
+            maxhp        =30,
+            speed        =4,
+            magic        =2,
+            basedamage   =5,
+            dodge        =5,
+            block        =10,
+            skillpoints  =0,
+            strength     =0,
+            dexterity    =0,
+            constitution =0,
+            intelligence =0,
+            wisdom       =0,
+            charisma     =0,
+            luck         =0
         )
 
 class Ranger(Player):
