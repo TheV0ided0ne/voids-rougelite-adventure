@@ -41,7 +41,7 @@ while True:
     command = input("\n> ").strip().lower()
 
     if command == "help":
-        print("\n---Command List---")
+        print("\n---Command List---") 
         print("numbers 1-9: selective options that progress the game!")
         print("help: displays this command list")
         print("inventory: displays materials inside inventory")
