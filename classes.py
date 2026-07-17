@@ -64,6 +64,13 @@ class Ranger(Player):
             dodge         = 15,
             block         = 5,
             skillpoints   = 0,
+            strength     =0,
+            dexterity    =0,
+            constitution =0,
+            intelligence =0,
+            wisdom       =0,
+            charisma     =0,
+            luck         =0
 
         )
 
@@ -79,7 +86,13 @@ class Brawler(Player):
             dodge         = 20,
             block         = 10,
             skillpoints   = 0,
-
+            strength=0,
+            dexterity=0,
+            constitution=0,
+            intelligence=0,
+            wisdom=0,
+            charisma=0,
+            luck=0
         )
 
 class Rouge(Player):
@@ -93,7 +106,14 @@ class Rouge(Player):
             basedamage    = 8,
             dodge         = 30,
             block         = 0,
-            skillpoints   = 0
+            skillpoints   = 0,
+            strength     =0,
+            dexterity    =0,
+            constitution =0,
+            intelligence =0,
+            wisdom       =0,
+            charisma     =0,
+            luck         =0
         )
 
 class Mage(Player):
@@ -108,4 +128,11 @@ class Mage(Player):
             dodge         = 5,
             block         = 0,
             skillpoints   = 0,
+            strength     =0,
+            dexterity    =0,
+            constitution =0,
+            intelligence =0,
+            wisdom       =0,
+            charisma     =0,
+            luck         =0
         )
