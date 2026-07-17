@@ -8,7 +8,7 @@ from classes import Ranger, Brawler, Rouge, Warrior, Mage
 import statistics
 import inventory
 
-print("Welcome to Void's Average Rougelite Adventure!")
+print("Welcome to Void's Average Rougelike Adventure!")
 print("Please select your class!")
 print("")
 print("Warrior [1]")
